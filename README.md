@@ -1,6 +1,6 @@
-# 🔥🌲 Forest Fire Prediction in USA (1992-2020) 🌲🔥
+# 🔥🌳 Algerian Forest Fire Prediction (2012-2017) 🌳🔥
 
-Welcome to the **Forest Fire Prediction** project! This project aims to predict forest fires 🐻‍❄️🔥 across the USA using wildfire records from 1992 to 2020. Join us in understanding and preventing wildfires with the power of data! 💻📊
+Welcome to the **Algerian Forest Fire Prediction** project! This project aims to predict forest fires in Algeria 🇩🇿 using the Algerian Forest Fires Dataset from 2012 to 2017. The dataset provides valuable information about meteorological conditions and fire occurrences to help build predictive models. 🚒🔥
 
 ## 📚 Table of Contents
 - [🌟 Introduction](#introduction)
@@ -15,63 +15,68 @@ Welcome to the **Forest Fire Prediction** project! This project aims to predict 
 - [📌 References](#references)
 
 ## 🌟 Introduction
-Wildfires are a huge problem 🌪️🔥 in the United States, causing damage to forests 🌲, wildlife 🦌, and even homes 🏡. This project aims to analyze historical wildfire data and build models that predict future wildfires, helping prevent environmental damage! 🌍💪
+Forest fires 🔥 pose a significant threat to Algeria’s northern forests 🌳. By using meteorological and fire data, we aim to predict the occurrence of forest fires and understand the conditions that contribute to these events. This will help in creating effective prevention strategies and ensuring the safety of natural resources and nearby communities.
 
 ## 📁 Dataset
-The dataset is sourced from Kaggle: [US Wildfire Records (6th Edition)](https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition). It contains over **2 million wildfire records** 📂, including:
-- **Year**: The year the fire occurred 🗓️
-- **Cause**: Description of the cause of the fire 🔍
-- **Size**: The size of the fire in acres 🌐
-- **Latitude** and **Longitude**: Coordinates of the fire 📍
+The dataset is obtained from Kaggle: [Algerian Forest Fires Dataset](https://www.kaggle.com/datasets/nitinchoudhary012/algerian-forest-fires-dataset). It contains data from **2012 to 2017** and includes meteorological measurements and fire occurrence records.
 
-That's a lot of fires! 😱🔥
+### Key features of the dataset:
+- **Temperature** (°C): Daily average temperature 🌡️
+- **Relative Humidity** (%): Daily humidity 💧
+- **Wind Speed** (km/h): Speed of the wind 🌬️
+- **Rainfall** (mm): Precipitation levels 🌧️
+- **Fire Occurrence**: Whether a fire occurred (Yes/No) 🔥❌
+
+The dataset is divided into two regions:
+- **Bejaia Region** (Region 1)
+- **Sidi Bel-Abbes Region** (Region 2)
 
 ## 🎯 Project Objective
-Our goals are:
-- 🔍 Analyze wildfire patterns from 1992 to 2020.
-- 🧠 Build machine learning models to predict fire occurrences.
-- 📊 Evaluate models and provide insights for better fire management. 🔥🧯
+The primary goals of this project are:
+- To analyze the meteorological factors that contribute to forest fires in Algeria.
+- To build machine learning models that can predict the occurrence of fires based on these conditions.
+- To provide insights that can help in forest fire management and prevention.
 
 ## 🛠️ Tools and Libraries
-We used a variety of tools to get the job done! 🚀💻
-- **Python** 🐍: Our coding language.
-- **Pandas** 🐼: For data handling.
+We will use the following tools and libraries in this project:
+- **Python** 🐍: The main programming language.
+- **Pandas** 🐼: For data manipulation and analysis.
 - **NumPy** 🔢: For numerical operations.
-- **Matplotlib & Seaborn** 📊: For beautiful visualizations.
-- **Scikit-learn** 🧠: For machine learning models.
-- **XGBoost** 🚀: For advanced gradient boosting.
+- **Matplotlib & Seaborn** 📊: For visualizing trends and data distributions.
+- **Scikit-learn** 🧠: For building machine learning models.
+- **XGBoost** 🚀: For gradient boosting to improve model accuracy.
 
 ## 🧹 Data Preprocessing
-Before we jump into modeling, we need to clean the data 🧼🧹:
-1. Handle missing values 🤕
-2. Feature engineering 🛠️ (extracting useful data like fire months 🌸🍁)
-3. Encode categorical variables 🎲
-4. Split data into training and testing sets 🔀
+To prepare the data for modeling, we need to:
+1. Handle missing values or incorrect data entries 🛠️.
+2. Convert categorical values (Yes/No for fire occurrence) to numerical ones (0/1) 🔄.
+3. Normalize or scale numerical features to improve model performance 📏.
+4. Split the dataset into training and testing sets (typically 80% train, 20% test) 📊.
 
 ## 🧠 Modeling
-Let's build some models! 🏗️ Here are the ones we’ll test:
+We will apply the following machine learning models:
 - **Logistic Regression** 📈
-- **Random Forest** 🌳🌳
-- **XGBoost** 🚀
+- **Random Forest** 🌳
 - **Support Vector Machine (SVM)** ⚔️
+- **XGBoost** 🚀
 
-We'll train these models and see which one predicts wildfires the best! 🏆🔥
+These models will be trained on meteorological data to predict whether a fire occurs. We will compare their performance based on accuracy and other relevant metrics.
 
 ## 📊 Evaluation
-We'll evaluate the models using these metrics:
+The models will be evaluated using the following metrics:
 - **Accuracy** ✔️
 - **Precision** 🎯
 - **Recall** 📞
 - **F1-Score** 🏅
 - **ROC-AUC Curve** 📈
 
-Let’s find the best fire-predicting machine! 🤖🔥
+This will help us determine which model performs the best in predicting forest fires in Algeria.
 
 ## 🏁 Conclusion
-This project aims to provide a reliable model for predicting wildfires, which can help support fire prevention agencies 🧑‍🚒 and contribute to saving the environment 🌎. Let's fight wildfires together! 🔥🧯
+The goal of this project is to develop a predictive model for forest fires in Algeria 🇩🇿 using meteorological data. By understanding the conditions that lead to fires, we can better manage and prevent them in the future. 🔥🌲
 
 ## 🚀 How to Use
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/your-repository/Forest_Fire_Prediction_USA.git
-   cd Forest_Fire_Prediction_USA
+   git clone https://github.com/your-repository/Algerian_Forest_Fire_Prediction.git
+   cd Algerian_Forest_Fire_Prediction
